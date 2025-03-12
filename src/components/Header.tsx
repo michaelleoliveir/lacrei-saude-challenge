@@ -82,17 +82,21 @@ const Header: React.FC = () => {
                     {dropdownOpen && (
                         <div className="absolute right-0 z-10 w-60 mt-14 mr-10 md:mr-28 bg-white border border-[#00000054] rounded-md">
                             <div className="m-4">
-                                <button className="flex flex-row w-full px-6 py-4 text-left text-gray-700 hover:bg-emerald-100 hover:text-emerald-700">
-                                    <User className="mr-4" />
-                                    Paciente
-                                </button>
+                                <Link href="https://paciente.lacreisaude.com.br/">
+                                    <button className="flex flex-row w-full px-6 py-4 text-left text-gray-700 hover:bg-emerald-100 hover:text-emerald-700">
+                                        <User className="mr-4" />
+                                        Paciente
+                                    </button>
+                                </Link>
                             </div>
                             <div className="h-px mx-4 bg-gray-300"></div>
                             <div className="m-4">
-                                <button className="flex flex-row w-full px-6 py-4 text-left text-gray-700 hover:bg-emerald-100 hover:text-emerald-700">
-                                    <BriefcaseMedical className="mr-4" />
-                                    Profissional
-                                </button>
+                                <Link href="https://profissional.lacreisaude.com.br/">
+                                    <button className="flex flex-row w-full px-6 py-4 text-left text-gray-700 hover:bg-emerald-100 hover:text-emerald-700">
+                                        <BriefcaseMedical className="mr-4" />
+                                        Profissional
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     )}
