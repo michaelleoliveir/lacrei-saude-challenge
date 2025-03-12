@@ -1,6 +1,7 @@
 "use client"
 
 import { BriefcaseMedical, ChevronDown, ChevronUp, Info, User } from "lucide-react";
+import Link from "next/link";
 import React, { useState, useRef, useEffect } from "react";
 
 const Header: React.FC = () => {
@@ -23,35 +24,44 @@ const Header: React.FC = () => {
             {/* logo */}
             <div>
                 {/* mobile */}
-                <img
-                    src="https://lacreisaude.com.br/_next/static/media/logo_lacrei_mobile.1f3a65cb.svg"
-                    alt="Lacrei Saúde Mobile"
-                    className="block h-4 md:hidden"
-                />
+                <Link href="/">
+                    <img
+                        src="https://lacreisaude.com.br/_next/static/media/logo_lacrei_mobile.1f3a65cb.svg"
+                        alt="Lacrei Saúde Mobile"
+                        className="block h-4 md:hidden"
+                    />
+                </Link>
                 {/* desktop */}
-                <img
-                    src="https://lacreisaude.com.br/_next/static/media/logo_lacrei_desktop.7ae004ab.svg"
-                    alt="Lacrei Saúde"
-                    className="hidden h-6 md:block"
-                />
+                <Link href="/">
+                    <img
+                        src="https://lacreisaude.com.br/_next/static/media/logo_lacrei_desktop.7ae004ab.svg"
+                        alt="Lacrei Saúde"
+                        className="hidden h-6 md:block"
+                    />
+                </Link>
             </div>
 
             {/* navbar */}
             <nav className="flex items-center gap-4">
                 {/* links do desktop */}
-                <button className="hidden md:block px-4 py-2 font-semibold text-[1.2rem] text-emerald-700 hover:bg-emerald-100 rounded-lg transition">
-                    Quem Somos
-                </button>
-                <button className="hidden md:block px-6 py-2 font-semibold text-[1.2rem] text-emerald-700 hover:bg-emerald-100 rounded-lg transition">
-                    Ajuda
-                </button>
+                <Link href="/aboutUs">
+                    <button className="hidden md:block px-4 py-2 font-semibold text-[1.2rem] text-emerald-700 hover:bg-emerald-100 rounded-lg transition cursor-pointer">
+                        Quem Somos
+                    </button>
+                </Link>
+                <Link href="https://lacreisaude.com.br/ajuda/">
+                    <button className="hidden md:block px-6 py-2 font-semibold text-[1.2rem] text-emerald-700 hover:bg-emerald-100 rounded-lg transition cursor-pointer">
+                        Ajuda
+                    </button>
+                </Link>
+
 
                 {/* dropdown */}
                 <div className="flex flex-row" ref={dropdownRef}>
                     {/* desktop: botão com texto */}
                     <button
                         onClick={() => setDropdownOpen(!dropdownOpen)}
-                        className="hidden md:flex items-center px-10 py-2 font-bold text-[1.2rem] bg-emerald-700 text-white rounded-lg hover:bg-green-700 transition"
+                        className="hidden md:flex items-center px-10 py-2 font-bold text-[1.2rem] bg-emerald-700 text-white rounded-lg hover:bg-green-700 transition cursor-pointer"
                     >
                         Entrar
                         {dropdownOpen ? <ChevronUp className="ml-4" /> : <ChevronDown className="ml-4" />}

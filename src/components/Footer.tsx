@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
                     </a>
                 </p>
                 <p className="mt-2">
-                    Copyright © 2024 Lacrei Saúde. Todos os direitos reservados. CNPJ: 51.265.351/0001-65
+                    Copyright © 2025 Michaelle Oliveira.
                 </p>
             </div>
         </footer>
