@@ -1,6 +1,13 @@
+"use client"
+
 import Card from "@/components/Card";
+import { useEffect } from "react";
 
 const Contact: React.FC = () => {
+    useEffect(() => {
+            document.title = "Quem somos | Lacrei Saúde";
+        });
+        
     const doctors = [
         {
             image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9jdG9yfGVufDB8fDB8fHww",

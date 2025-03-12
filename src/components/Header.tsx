@@ -44,7 +44,7 @@ const Header: React.FC = () => {
             {/* navbar */}
             <nav className="flex items-center gap-4">
                 {/* links do desktop */}
-                <Link href="/aboutUs">
+                <Link href="/quem-somos">
                     <button className="hidden md:block px-4 py-2 font-semibold text-[1.2rem] text-emerald-700 hover:bg-emerald-100 rounded-lg transition cursor-pointer">
                         Quem Somos
                     </button>

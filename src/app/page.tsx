@@ -1,8 +1,15 @@
+"use client"
+
 import { Mail, Phone, Pin } from "lucide-react";
+import { useEffect } from "react";
 
 const Contact: React.FC = () => {
+    useEffect(() => {
+        document.title = "Início | Lacrei Saúde";
+    });
+    
     return (
-        <>            
+        <>
             <div className="relative flex flex-col items-center justify-center p-8 mt-5 ">
                 {/* Título */}
                 <h1 className="text-4xl font-bold text-center font-nunito">Entre em Contato</h1>
