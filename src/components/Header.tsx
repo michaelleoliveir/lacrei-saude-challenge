@@ -20,7 +20,7 @@ const Header: React.FC = () => {
     }, []);
 
     return (
-        <header style={{ background: "linear-gradient(rgb(245, 255, 251) 31.04%, rgb(255, 255, 255) 100%)" }} className="relative flex items-center justify-between h-16 py-0 px-[7.625rem] md:h-24 md:px-28">
+        <header style={{ background: "linear-gradient(rgb(245, 255, 251) 31.04%, rgb(255, 255, 255) 100%)" }} className="relative flex items-center justify-between h-16 px-6 py-0 mt-3 md:mt-0 md:h-24 md:px-[7.625rem]">
             {/* logo */}
             <div>
                 {/* mobile */}
@@ -28,7 +28,7 @@ const Header: React.FC = () => {
                     <img
                         src="https://lacreisaude.com.br/_next/static/media/logo_lacrei_mobile.1f3a65cb.svg"
                         alt="Lacrei Saúde Mobile"
-                        className="block h-4 md:hidden"
+                        className="block h-4 w-[200px] ml-[-20px] md:hidden"
                     />
                 </Link>
                 {/* desktop */}
@@ -36,7 +36,7 @@ const Header: React.FC = () => {
                     <img
                         src="https://lacreisaude.com.br/_next/static/media/logo_lacrei_desktop.7ae004ab.svg"
                         alt="Lacrei Saúde"
-                        className="hidden h-6 md:block"
+                        className="hidden h-6 w-[187px] md:block"
                     />
                 </Link>
             </div>
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
                     </button>
 
                     {dropdownOpen && (
-                        <div className="absolute right-0 z-10 w-58 mt-18 mr-10 md:mr-28 bg-white border border-[#00000054] rounded-lg">
+                        <div className="absolute right-0 z-10 w-58 mt-14 mr-6 md:mr-28 bg-white border border-[#00000054] rounded-lg">
                             <div className="m-3">
                                 <Link href="https://paciente.lacreisaude.com.br/">
                                     <button className="flex flex-row w-full px-6 py-4 text-left text-black hover:bg-[#7ed7be27] hover:text-emerald-700">

@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
             <div className="relative flex flex-col items-center justify-center p-8 mt-5 ">
                 {/* Título */}
                 <div>
-                    <h1 className="mb-2 text-4xl font-bold text-center font-nunito">Entre em Contato</h1>
+                    <h1 className="mb-2 text-3xl font-bold text-center md:text-4xl font-nunito">Entre em Contato</h1>
                     <div className="h-[0.1rem] mx-18 bg-emerald-700"></div>
                 </div>
                 

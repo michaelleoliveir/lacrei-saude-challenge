@@ -59,11 +59,12 @@ const Contact: React.FC = () => {
             {/* heading */}
             <div className="flex flex-col items-center">
                 <div className="mb-6">
-                    <h1 className="mb-2 text-4xl font-bold text-center font-nunito">Conheça nosso time!</h1>
+                    <h1 className="mb-2 text-3xl font-bold text-center md:text-4xl font-nunito">Conheça nosso time!</h1>
                     <div className="h-[0.1rem] mx-6 bg-emerald-700"></div>
                 </div>
-                <p className="text-[1.2rem] w-[70%] font-nunito text-center">A Lacrei Saúde facilita a conexão entre pessoas da comunidade LGBTQIAPN+ mais que precisam de atendimento clínico a profissionais da saúde.</p>
-                <p className="text-[1.2rem] w-[70%] font-nunito text-center">Buscamos proporcionar um atendimento de qualidade, sustentado pelos pilares da inclusão, representatividade e segurança.</p>
+                <p className="text-[1rem] md:text-[1.2rem] w-[70%] font-nunito text-center">A Lacrei Saúde facilita a conexão entre pessoas da comunidade LGBTQIAPN+ mais que precisam de atendimento clínico a profissionais da saúde.</p>
+                <br />
+                <p className="text-[1rem] md:text-[1.2rem] w-[70%] font-nunito text-center">Buscamos proporcionar um atendimento de qualidade, sustentado pelos pilares da inclusão, representatividade e segurança.</p>
             </div>
 
             {/* profissionais */}

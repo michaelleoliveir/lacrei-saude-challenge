@@ -13,7 +13,7 @@ const Card: React.FC<CardProps> = ({ image, name, specialization, crm }) => {
                 alt={name}
                 className="object-cover w-24 h-24 mb-4 border-2 rounded-full border-emerald-900"
             />
-            <h2 className="text-lg font-bold">{name}</h2>
+            <h2 className="text-lg font-bold text-1xl">{name}</h2>
             <p className="text-sm text-gray-600">{specialization}</p>
             <p className="text-sm text-gray-500">{crm}</p>
         </div>
