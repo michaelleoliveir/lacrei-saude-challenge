@@ -7,7 +7,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ image, name, specialization, crm }) => {
     return (
-        <div data-testid="card-container" className="flex flex-col items-center w-50 p-4 m-3 text-center rounded-lg shadow-xl md:w-64 font-nunito hover:shadow-[#5e876c5e] cursor-pointer flex-shrink-0 flex-grow-0 basis-[calc(50%-1.5rem)]">
+        <div data-testid="card-container" className="flex flex-col items-center w-35 p-4 m-3 text-center rounded-lg shadow-xl md:w-64 font-nunito hover:shadow-[#5e876c5e] cursor-pointer">
             <img
                 src={image}
                 alt={name}
