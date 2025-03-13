@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Projeto Lacrei Saúde
 
-## Getting Started
+Desafio para Voluntariado Front End na Lacrei Saúde.
 
-First, run the development server:
+
+## Sumário
+
+Este repositório apresenta a criação de páginas web interativas, desenvolvidas com ênfase na experiência do usuário e alinhadas ao guia de estilo da Lacrei Saúde. O projeto foi desenvolvido utilizando TypeScript, Next.js e Tailwind, juntamente com o Jest, para a realização de testes unitários.
+
+## Tecnologias Utilizadas
+
+- **Framework**: Next.js.
+- **Linguagem**: TypeScript.
+- **Estilização**: Tailwind e Styled-Components.
+- **Testes**: Jest e React Testing Library.
+
+## Funcionalidades implementadas
+
+### 1. Header e Footer Personalizados
+
+O design do Header e do Footer reflete a essência acolhedora e profissional da Lacrei Saúde, alinhando-se perfeitamente com o estilo visual da marca. Ambos os componentes são reutilizáveis e otimizados para diferentes resoluções de tela e também compartilhados por toda a aplicação, sem necessidade de re-renderização de informações estáticas.
+
+### 2. Roteamento Entre Páginas
+
+As páginas foram integradas com um sistema de roteamento fluido e eficiente, permitindo a navegação dinâmica e sem interrupções, podendo acessá-las pelos botões no Header. Ao clicar na logo da Lacrei Saúde, é redirecionado para a página inicial (Home).
+
+#### Páginas
+
+- Home (/)
+- Quem Somos (/quem-somos)
+- Ajuda (/ajuda)
+
+### 3. Botões Interativos
+
+Há três botões com funcionalidades exclusivas:
+
+- Botão no header para alternar entre as páginas web da aplicação (`Quem Somos` e `Ajuda`)
+- Botão no header que mostra as opções de login (`Entrar`), seja o usuário um Paciente ou um Profissional.
+- Botão no footer que, ao clicar, leva o usuário ao topo da página.
+
+
+## Demonstração
+
+### Versão Desktop
+
+- Página "Entre em Contato"
+![Demonstração das páginas web interativas para Lacrei Saúde versão desktop](https://i.postimg.cc/vBQWNzSt/Captura-de-tela-2025-03-12-220632.png)
+
+- Página "Quem somos"
+![Demonstração das páginas web interativas para Lacrei Saúde versão desktop](https://i.postimg.cc/vZFxKh4x/Captura-de-tela-2025-03-12-220714.png)
+
+### Versão Mobile
+
+- Página "Entre em Contato"
+![Demonstração das páginas web interativas para Lacrei Saúde versão mobile](https://i.postimg.cc/j2fPWFWK/Captura-de-tela-2025-03-12-221048.png)
+
+- Página "Quem somos"
+![Demonstração das páginas web interativas para Lacrei Saúde versão mobile](https://i.postimg.cc/CLt9pB0q/Captura-de-tela-2025-03-12-221153.png)
+
+## Como Iniciar
+
+### Instalação
+
+1. Clone o repositório
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/michaelleoliveir/lacrei-saude-challenge
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instale as dependências
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Inicie o servidor
 
-## Learn More
+- ```bash
+    npm start
+  ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Acesse [http://localhost:3000](http://localhost:3000) com seu navegador.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- ```bash
+   npm run dev
+  ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Testes Unitários
 
-## Deploy on Vercel
+Para executar os testes unitários dos componentes:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+    npm run test
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![Teste Unitário](https://i.postimg.cc/9fb9Z2gW/Captura-de-tela-2025-03-12-220409.png)
+## Badges
+
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
