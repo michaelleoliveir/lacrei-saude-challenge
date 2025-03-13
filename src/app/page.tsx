@@ -57,24 +57,24 @@ const Contact: React.FC = () => {
                 {/* Informações de Contato */}
                 <div className="flex flex-col justify-center gap-8 mt-8 mb-8 md:flex-row">
                     <div className="flex flex-col items-center text-center">
-                        <div className="p-5 mb-3 rounded-full bg-emerald-900">
-                            <Pin color="#dff2ed" />
+                        <div className="p-5 mb-3 transition rounded-full bg-emerald-700 hover:bg-emerald-800">
+                            <Pin color="#ffffff" />
                         </div>
                         <h2>
                             <span className="font-bold">Endereço:</span> São Paulo, SP
                         </h2>
                     </div>
                     <div className="flex flex-col items-center text-center">
-                        <div className="p-5 mb-3 rounded-full bg-emerald-900">
-                            <Phone color="#dff2ed" />
+                        <div className="p-5 mb-3 rounded-full bg-emerald-700 hover:bg-emerald-800">
+                            <Phone color="#ffffff" />
                         </div>
                         <h2>
                             <span className="font-bold">Telefone:</span> (11) 99999-9999
                         </h2>
                     </div>
                     <div className="flex flex-col items-center text-center">
-                        <div className="p-5 mb-3 rounded-full bg-emerald-900">
-                            <Mail color="#dff2ed" />
+                        <div className="p-5 mb-3 rounded-full bg-emerald-700 hover:bg-emerald-800">
+                            <Mail color="#ffffff" />
                         </div>
                         <h2>
                             <span className="font-bold">Email:</span> contato@lacreisaude.com.br
@@ -150,7 +150,7 @@ const Contact: React.FC = () => {
                                         </div>
                                     }
                             </div>
-                            <button type="submit" className="w-full px-10 py-2 mt-6 font-bold text-[#dff2ed] transition bg-emerald-900 rounded-lg md:w-auto hover:bg-[#dff2ed] hover:text-emerald-950">
+                            <button type="submit" className="w-full px-10 py-2 mt-6 font-bold text-[#ffffff] transition bg-emerald-700 hover:bg-emerald-800 rounded-lg md:w-auto">
                                 Enviar
                             </button>
                         </form>

@@ -66,11 +66,13 @@ const Header: React.FC = () => {
                         Entrar
                         {dropdownOpen ? <ChevronUp className="ml-4" /> : <ChevronDown className="ml-4" />}
                     </button>
-                    <button
-                        className="flex items-center p-2 mr-6 transition rounded-lg text-emerald-900 md:hidden hover:bg-[#d0f7eb6a]"
-                    >
-                        <Info />
-                    </button>
+                    <Link href="/quem-somos">
+                        <button
+                            className="flex items-center p-2 mr-6 transition rounded-lg text-emerald-900 md:hidden hover:bg-[#d0f7eb6a]"
+                        >
+                            <Info />
+                        </button>
+                    </Link>
                     {/* mobile: botão com ícone */}
                     <button
                         onClick={() => setDropdownOpen(!dropdownOpen)}
