@@ -16,23 +16,20 @@ Este repositório apresenta a criação de páginas web interativas, desenvolvid
 
 ## Funcionalidades implementadas
 
-### 1. Header e Footer Personalizados
+### 1. Header e Footer
 
-O design do Header e do Footer reflete a essência acolhedora e profissional da Lacrei Saúde, alinhando-se perfeitamente com o estilo visual da marca. Ambos os componentes são reutilizáveis e otimizados para diferentes resoluções de tela e também compartilhados por toda a aplicação, sem necessidade de re-renderização de informações estáticas.
+O design do Header e do Footer foi desenvolvido tendo como base o estilo e formatação já existentes na página do Lacrei Saúde. Ambos componentes são reutilizáveis e adaptáveis conforme o dispositivo que o usuário está utilizando.
 
-### 2. Roteamento Entre Páginas
+### 2. Roteamento
 
-As páginas foram integradas com um sistema de roteamento fluido e eficiente, permitindo a navegação dinâmica e sem interrupções, podendo acessá-las pelos botões no Header. Ao clicar na logo da Lacrei Saúde, é redirecionado para a página inicial (Home).
-
+Para esse projeto de voluntariado, desenvolvi duas páginas exclusivas, sendo elas de **Entre em contato** e **Quem somos**. Para tal, foi utilizado o sistema de rotas para realizar o direcionamento para as páginas 
+ 
 #### Páginas
 
-- Home (/)
+- Entre em contato (/)
 - Quem Somos (/quem-somos)
-- Ajuda (/ajuda)
 
 ### 3. Botões Interativos
-
-Há três botões com funcionalidades exclusivas:
 
 - Botão no header para alternar entre as páginas web da aplicação (`Quem Somos` e `Ajuda`)
 - Botão no header que mostra as opções de login (`Entrar`), seja o usuário um Paciente ou um Profissional.
@@ -75,15 +72,15 @@ npm install
 
 3. Inicie o servidor
 
-- ```bash
-    npm start
+ ```bash
+npm start
   ```
 
 4. Acesse [http://localhost:3000](http://localhost:3000) com seu navegador.
 
-- ```bash
-   npm run dev
-  ```
+```bash
+npm run dev
+ ```
 
 ## Testes Unitários
 
@@ -96,8 +93,20 @@ Para executar os testes unitários dos componentes:
 ![Teste Unitário](https://i.postimg.cc/9fb9Z2gW/Captura-de-tela-2025-03-12-220409.png)
 ## Badges
 
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+
+![NextJS](https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+
+![NPM](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Jest](https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white)
+
+![Visual Studio Code](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
