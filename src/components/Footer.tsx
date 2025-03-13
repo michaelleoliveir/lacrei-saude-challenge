@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
 
             </div>
 
-            <div className="flex flex-row justify-between pt-8 mt-8 text-sm text-left text-gray-600 border-t border-[#52a04f72] flex-pt-6">
+            <div className="flex flex-row justify-between pt-8 mt-8 text-[0.75rem] text-left text-gray-600 border-t border-[#52a04f72] flex-pt-6 font-nunito">
                 <div>
                     <p>A Lacrei Saúde não oferece tratamento médico emergencial. Em caso de emergência, procure o hospital mais próximo.</p>
                     <p>

@@ -20,7 +20,7 @@ const Header: React.FC = () => {
     }, []);
 
     return (
-        <header className="relative flex items-center justify-between h-16 p-6 px-10 py-10 md:h-24 md:px-28">
+        <header style={{ background: "linear-gradient(rgb(245, 255, 251) 31.04%, rgb(255, 255, 255) 100%)" }} className="relative flex items-center justify-between h-16 py-0 px-[7.625rem] md:h-24 md:px-28">
             {/* logo */}
             <div>
                 {/* mobile */}
@@ -45,12 +45,12 @@ const Header: React.FC = () => {
             <nav className="flex items-center gap-4">
                 {/* links do desktop */}
                 <Link href="/quem-somos">
-                    <button className="hidden md:block px-4 py-2 font-semibold text-[1.2rem] text-emerald-700 hover:bg-emerald-100 rounded-lg transition cursor-pointer">
+                    <button className="hidden md:block px-8 py-2 font-semibold text-[1.2rem] text-emerald-700 hover:bg-[#014c3717] rounded-lg transition cursor-pointer">
                         Quem Somos
                     </button>
                 </Link>
                 <Link href="https://lacreisaude.com.br/ajuda/">
-                    <button className="hidden md:block px-6 py-2 font-semibold text-[1.2rem] text-emerald-700 hover:bg-emerald-100 rounded-lg transition cursor-pointer">
+                    <button className="hidden md:block px-8 py-2 font-semibold text-[1.2rem] text-emerald-700 hover:bg-[#014c3717] rounded-lg transition cursor-pointer">
                         Ajuda
                     </button>
                 </Link>
@@ -61,7 +61,7 @@ const Header: React.FC = () => {
                     {/* desktop: botão com texto */}
                     <button
                         onClick={() => setDropdownOpen(!dropdownOpen)}
-                        className="hidden md:flex items-center px-10 py-2 font-bold text-[1.2rem] bg-emerald-700 text-white rounded-lg hover:bg-green-700 transition cursor-pointer"
+                        className="hidden md:flex items-center px-10 py-2 font-bold text-[1.2rem] bg-emerald-700 text-white rounded-lg hover:bg-emerald-800 transition cursor-pointer"
                     >
                         Entrar
                         {dropdownOpen ? <ChevronUp className="ml-4" /> : <ChevronDown className="ml-4" />}
@@ -82,19 +82,19 @@ const Header: React.FC = () => {
                     </button>
 
                     {dropdownOpen && (
-                        <div className="absolute right-0 z-10 w-60 mt-14 mr-10 md:mr-28 bg-white border border-[#00000054] rounded-md">
-                            <div className="m-4">
+                        <div className="absolute right-0 z-10 w-58 mt-18 mr-10 md:mr-28 bg-white border border-[#00000054] rounded-lg">
+                            <div className="m-3">
                                 <Link href="https://paciente.lacreisaude.com.br/">
-                                    <button className="flex flex-row w-full px-6 py-4 text-left text-gray-700 hover:bg-emerald-100 hover:text-emerald-700">
+                                    <button className="flex flex-row w-full px-6 py-4 text-left text-black hover:bg-[#7ed7be27] hover:text-emerald-700">
                                         <User className="mr-4" />
                                         Paciente
                                     </button>
                                 </Link>
                             </div>
                             <div className="h-px mx-4 bg-gray-300"></div>
-                            <div className="m-4">
+                            <div className="m-3">
                                 <Link href="https://profissional.lacreisaude.com.br/">
-                                    <button className="flex flex-row w-full px-6 py-4 text-left text-gray-700 hover:bg-emerald-100 hover:text-emerald-700">
+                                    <button className="flex flex-row w-full px-6 py-4 text-left text-black hover:bg-[#7ed7be27] hover:text-emerald-700">
                                         <BriefcaseMedical className="mr-4" />
                                         Profissional
                                     </button>

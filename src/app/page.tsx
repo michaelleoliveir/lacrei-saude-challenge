@@ -52,7 +52,10 @@ const Contact: React.FC = () => {
         <>
             <div className="relative flex flex-col items-center justify-center p-8 mt-5 ">
                 {/* Título */}
-                <h1 className="text-4xl font-bold text-center font-nunito">Entre em Contato</h1>
+                <div>
+                    <h1 className="mb-2 text-4xl font-bold text-center font-nunito">Entre em Contato</h1>
+                    <div className="h-[0.1rem] mx-18 bg-emerald-700"></div>
+                </div>
                 
                 {/* Informações de Contato */}
                 <div className="flex flex-col justify-center gap-8 mt-8 mb-8 md:flex-row">
@@ -61,7 +64,7 @@ const Contact: React.FC = () => {
                             <Pin color="#ffffff" />
                         </div>
                         <h2>
-                            <span className="font-bold">Endereço:</span> São Paulo, SP
+                            <span className="font-bold">Endereço:</span> Centro, São Paulo - SP
                         </h2>
                     </div>
                     <div className="flex flex-col items-center text-center">
@@ -142,7 +145,7 @@ const Contact: React.FC = () => {
                                     value={message}
                                     onChange={(e) => setMessage(e.target.value)}
                                     placeholder="Sua mensagem..." 
-                                    className={`w-full p-2 mt-1 border rounded-lg focus:outline-none focus:ring-1 focus:ring-emerald-900 ${errors.message ? `border-[#bc1c1c]` : `border-gray-300`}`}></textarea>
+                                    className={`w-full resize-none p-2 mt-1 border rounded-lg focus:outline-none focus:ring-1 focus:ring-emerald-900 ${errors.message ? `border-[#bc1c1c]` : `border-gray-300`}`}></textarea>
                                     {errors.message && 
                                         <div className="flex flex-row gap-0.5 mt-2">
                                             <IoIosAlert height={16} width={16} color="#bc1c1c" />
